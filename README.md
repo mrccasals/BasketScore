@@ -1,4 +1,4 @@
-# BasketStats
+# BasketScore
 Simple program to manage stats from a basketball match.
 
 The purpose of this program is to be able to generate stats in the simplest way possible and do it with only using your keyboard.
