@@ -17,3 +17,13 @@ void CustomLCD::addThree(){
 	score+=3;
 	display(score);
 }
+
+void CustomLCD::subOne(){
+	if(score>0) score-=1;
+	display(score);
+}
+
+void CustomLCD::addCustom(int n){
+	score+=n;
+	display(score);
+}

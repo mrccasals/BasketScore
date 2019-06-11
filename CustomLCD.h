@@ -7,6 +7,9 @@ class CustomLCD: public QLCDNumber{
 		void addOne();
 		void addTwo();
 		void addThree();
+		void subOne();
+
+		void addCustom(int n);
 	private:
 		int score;
 };
