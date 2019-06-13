@@ -27,17 +27,27 @@ void MyForm::keyPressEvent (QKeyEvent *event){
             }
 	    case Qt::Key_A:{
                 setTeam = 0;
+		emit paintHome(1);
+		emit paintGuest(0);
                 break;
             }
 	    case Qt::Key_D:{
                 setTeam = 1;
+		emit paintGuest(1);
+		emit paintHome(0);
                 break;
             }
 	    case Qt::Key_F:{
-                
+		if(setTeam == 0){
+			emit addFoulHome();
+		}
+		else{
+			emit addFoulGuest();
+		}
                 break;
             }
 	    case Qt::Key_Q:{
+		emit nextQuarter();
                 break;
             }
             default: event->ignore(); break;

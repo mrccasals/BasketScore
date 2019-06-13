@@ -8,8 +8,10 @@ class CustomLCD: public QLCDNumber{
 		void addTwo();
 		void addThree();
 		void subOne();
-
 		void addCustom(int n);
+		void paintLCD(bool b);
+		void resetLCD();
+
 	private:
 		int score;
 };

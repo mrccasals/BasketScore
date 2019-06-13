@@ -14,7 +14,11 @@ class MyForm: public QWidget
 	signals:
 		void addPointsHome(int n);
 		void addPointsGuest(int n);
-		void editTeam(int team);
+		void paintHome(bool b);
+		void paintGuest(bool b);
+		void nextQuarter();
+		void addFoulHome();
+		void addFoulGuest();
 	private:
 		Ui::MyForm ui;
 		int setTeam;

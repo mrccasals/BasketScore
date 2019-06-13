@@ -27,3 +27,17 @@ void CustomLCD::addCustom(int n){
 	score+=n;
 	display(score);
 }
+
+void CustomLCD::paintLCD(bool b){
+	if(b){
+		setPalette(Qt::green);
+	}
+	else{
+		setPalette(Qt::red);
+	}
+}
+
+void CustomLCD::resetLCD(){
+	score = 0;
+	display(score);
+}
